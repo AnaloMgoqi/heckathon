@@ -7,7 +7,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-transform: uppercase;
-    transition: all ease .2s ease-out;
+    transition: all ease .2s;
     text-decoration: none;
 }
 html{
@@ -25,7 +25,7 @@ section{
 .heading{
     text-align: center;
     padding-bottom: 2rem;
-    text-shadow: rgb(0,128,128);
+    text-shadow: 0 8px 24px rgb(0,128,128);
     text-transform: uppercase;
     color: blue;
     font-size: 5rem;
@@ -138,7 +138,7 @@ section{
     font-size: 4.5rem;
     color: blue;
     line-height: 1.8;
-    text-shadow: rgb(0,128,128);
+    text-shadow: 0 0 0 rgb(0,128,128);
 }
 .home .content p{
     font-size: 1.7rem;
@@ -171,16 +171,16 @@ section{
 
 .services .box-container .box{
     border-radius: 0.5rem;
-    box-shadow:rgb(0,128,128);
+    box-shadow: 0 0 0 rgb(0,128,128);
     border: 0.2rem solid royalblue;
     padding: 2.5rem;
 }
 
 .services .box-container .box:hover{
     border-radius: 0.5rem;
-    box-shadow:springgreen;
+    box-shadow: 0 0 0 springgreen;
     border: 0.2rem solid ;
-    background: url(images/contact.jpg);
+    background: url("https://picsum.photos/seed/picsum/200/300");
     padding: 2.5rem;
     transition: 0.3s ease ;
 }
@@ -229,7 +229,7 @@ section{
 
 .about .row .content h3{
     color: blue;
-    text-shadow: black;
+    text-shadow: 0 0 0 black;
     font-size: 4rem;
     line-height: 1.8;
     margin-left: 6rem;
@@ -263,7 +263,7 @@ section{
     background: lightblue;
     border-radius: 5rem;
     border: blue;
-    box-shadow: black;
+    box-shadow: 0 0 0 black;
     padding: 2rem;
 }
 
@@ -293,7 +293,7 @@ section{
     color: darkcyan;
     border-radius:0.5rem ;
     border: blue;
-    margin:0.3 ;
+    margin: 0.3px ;
 
 }
 
@@ -329,7 +329,7 @@ section{
 .book .row form{
     flex: 1 1 45rem; 
     border:0.3rem solid blue; 
-    box-shadow: black;
+    box-shadow: 0 0 0 black;
     text-align: center;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -384,7 +384,7 @@ section{
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
@@ -420,7 +420,7 @@ section{
 .contact .row form{
     flex: 1 1 45rem; 
     border:0.3rem solid blue; 
-    box-shadow: black;
+    box-shadow: 0 0 0 black;
     text-align: center;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -467,7 +467,7 @@ section{
 .signup .row form{
     flex: 1 1 45rem; 
     border:0.3rem solid blue; 
-    box-shadow: black;
+    box-shadow: 0 0 0 black;
     text-align: center;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -502,7 +502,7 @@ section{
     padding: 1rem 3rem;
 }
 .signup form .province{
-    font-size: rem;
+    font-size: 1rem;
 }
 
 /*sign up section end*/
@@ -525,13 +525,13 @@ section{
 .footer .box-container .box a{
     display: block;
  font-size: 1.2rem;
-    color: dark cyan;
+    color: darkcyan;
     padding: 1rem 0;
 
 }
 .footer .box-container .box a i{
     padding-right: 0.5rem;
-    color:teal;
+    color: teal;
     text-transform: lowercase;
 }
 .footer .box-container .box a:hover {
@@ -560,7 +560,7 @@ section{
 .login .row form{
     flex: 1 1 45rem; 
     border:0.3rem solid blue; 
-    box-shadow: black;
+    box-shadow: 0 1rem 1rem black;
     text-align: center;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -649,7 +649,7 @@ padding: 2rem;
     position: absolute;
     top: 115%; right: 2rem;
     border-radius: 0.5rem;
-    box-shadow: rgb(0,128,128);
+    box-shadow: 0 0 0 rgb(0,128,128);
     width: 30rem;
     border:0.2rem solid royalblue;
     background: white;
