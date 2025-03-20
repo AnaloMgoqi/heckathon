@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobmed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="book" id="book">
+      <h1 class="heading"><span>book</span> now</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/booking.png" alt="" />
+        </div>
+
+        <form onsubmit="sendEmail(); reset(); return false",>
+          <h3>book appointment</h3>
+
+          
+          <select  class="box" name="request">       
+            <option value="eastern cape">Medicine</option>
+            <option value="Gauteng">Doctor</option>
+            <option value="Gauteng">Nurse</option>
+            <option value="Gauteng">Driver</option>   
+
+          <input type="text" id="name" placeholder="your name" class="box" required />
+          <input
+            type="contact" id="contact"
+            placeholder="your contact"
+            class="box"
+            required
+          />
+          <input type="email" id="email" placeholder="your email" class="box" required />
+          <input
+          type="address" id="address"
+          placeholder="home address"
+          class="box"
+          required
+        />
+
+          <input type="text" id="description" placeholder="description" class="box" required />
+          <input type="date" class="box" required />
+          <input type="time" class="box" required />
+          <input type="submit" value="book now" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    
+    <script>
+
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "malulekejabulani96@gmail.com",
+    Password : "@Nkateko19",
+    To : 'malulekejabulani96@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New contact form enquiry",
+    Body : "Name" + document.getElementById("name").value
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> contact:" + document.getElementById("contact").value
+            + "<br> address:" + document.getElementById("address").value
+            + "<br> description:" + document.getElementById("description").value
+}).then(
+  message => alert("Appointment booked succesfully")
+);
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

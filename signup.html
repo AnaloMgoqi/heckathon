@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobmed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="signup" id="signup">
+      <h1 class="heading"><span>signup</span> now</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/booking.png" alt="" />
+        </div>
+
+        <form id="signup">
+          <h3>Sign up</h3>
+          <p>area with <span>*</span> are required</p>
+          <input  id="name"type="text" placeholder="first name" class="box" required />
+          <input type="text" placeholder="middle name optional" class="box" />
+          <input id="surname" type="text" placeholder="last name" class="box" required />
+         
+          <select id="gender" class="box" name="gender">       
+            <option value="m">male</option>
+            <option value="f">female</option>
+           <input type="contact"
+            placeholder="contact number"
+            class="box"
+            required
+          />
+          <input id="email"
+            type="email"
+            placeholder="email address"
+            class="box"
+            required
+          />
+          <input id="address"
+            type="address"
+            placeholder="street name"
+            class="box"
+            required
+          />
+          <input id="address2" type="address" placeholder="town/city" class="box" required />
+          <input id="address3" type="address" placeholder="zip code" class="box" required />
+
+          
+        <select  class="box" name="province">       
+      <option value="eastern cape">Eastern cape</option>
+      <option value="Gauteng">Gauteng</option>
+      <option value="Kwazullu-natal">Kwazullu-natal</option>
+      <option value="limpopo">limpopo</option>
+      <option value="Mpumalanga">Mpumalanga</option>
+      <option value="Northern cape">Northern cape</option>
+      <option value="north west">north west</option>
+      <option value="western cape">western cape</option>
+        </select>
+          <input id="username" type="text" placeholder="username*" class="box" required />
+          <input id="password" type="password" placeholder="password*" class="box" required />
+          <input  type="password" placeholder="confirm password*" class="box" required />
+          <input type="submit" value="sign up" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDgst7E9Pc_nnJkHbY_0R5SC_yXf9Vvwk0",
+          authDomain: "signup-b5158.firebaseapp.com",
+          projectId: "signup-b5158",
+          storageBucket: "signup-b5158.appspot.com",
+          messagingSenderId: "112044940057",
+          appId: "1:112044940057:web:2afae3aaf4a3164a118388"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
